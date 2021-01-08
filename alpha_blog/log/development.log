@@ -2609,3 +2609,787 @@ Processing by ArticlesController#edit as HTML
 Completed 200 OK in 67ms (Views: 62.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/articles" for ::1 at 2021-01-08 12:44:47 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 376ms (Views: 362.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/new" for ::1 at 2021-01-08 12:44:49 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (44.6ms)
+  Rendered articles/new.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 12:44:50 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 83ms (Views: 78.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/5" for ::1 at 2021-01-08 12:44:51 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 91ms (Views: 71.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/5/edit" for ::1 at 2021-01-08 12:44:56 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (8.0ms)
+  Rendered articles/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 62.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 12:44:58 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/6" for ::1 at 2021-01-08 12:45:03 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 57.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/6" for ::1 at 2021-01-08 12:45:06 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4wWrYGYnOFw3SJziNimA3bXBlK6+Y2607EekKnf6O10UT1X8FHX+OROFmufYjTx13g//K3I6VTugV/BaFa50Lw==", "id"=>"6"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 6]]
+  [1m[35m (111.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 126ms (ActiveRecord: 112.5ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 12:45:06 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:48:30 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 312ms (Views: 293.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:49:56 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/config
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/images
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/node_modules):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4599168347209693765_70260944309520'
+Started GET "/articles" for ::1 at 2021-01-08 13:51:54 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:51:55 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:51:56 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 119.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:52:15 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:52:16 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 96ms (Views: 90.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:52:24 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:52:25 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 63.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 13:53:13 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/config
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/images
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/node_modules):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4599168347209693765_70261002831520'
+Started GET "/articles" for ::1 at 2021-01-08 15:11:36 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (14.8ms)
+Started GET "/articles" for ::1 at 2021-01-08 15:11:37 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 380ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/config
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/images
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/node_modules
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/popper_js-1.16.0/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/javascripts):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2417870012313281647_47218047447480'
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/config
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/images
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/node_modules
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/popper_js-1.16.0/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/javascripts):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2417870012313281647_70309970559880'
+Started GET "/articles" for ::1 at 2021-01-08 15:11:39 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/config
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/images
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/node_modules
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/popper_js-1.16.0/assets/javascripts
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/stylesheets
+  /home/srijan/.rvm/gems/ruby-2.6.0/gems/bootstrap-4.4.1/assets/javascripts):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2417870012313281647_70309892584900'
+Started GET "/articles" for ::1 at 2021-01-08 15:11:52 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 2803ms (Views: 2801.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:12:10 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:12:15 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 132.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:12:15 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 136ms (Views: 131.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:12:17 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 130ms (Views: 127.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:17:08 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 1242ms (Views: 1236.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:19:14 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1267ms (Views: 1263.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:19:42 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:21:41 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:21:43 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:21:44 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:21:45 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:22:57 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:23:00 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 133ms (Views: 129.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:23:04 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 110ms (Views: 106.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:23:07 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:23:09 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:23:20 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:24:34 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1339ms (Views: 1337.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:24:53 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:28:28 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 118ms (Views: 116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:31:58 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:33:56 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 133ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:33:57 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 117ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:33:58 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:33:58 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 169ms (Views: 167.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:33:59 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:34:01 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:34:02 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:43:36 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/views/layouts/_nav.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ink_to "Articles" articles_path, class: "nav-link" );@output...
+...                  ^~~~~~~~~~~~~):
+  
+app/views/layouts/_nav.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2417870012313281647_70309890905340'
+app/controllers/pages_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2021-01-08 15:44:19 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:44:21 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-01-08 15:44:22 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:44:23 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 112.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:49:56 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 122ms (Views: 117.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 15:58:24 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:01:58 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 98.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:02:56 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:03:05 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 121.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:04:05 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 119.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:04:45 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 98.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:06:25 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 114ms (Views: 110.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:07:46 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:08:31 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/views/articles/index.html.erb:12: syntax error, unexpected ':', expecting ')'
+...e(article.description, :length:100) );@output_buffer.safe_ap...
+...                              ^
+/home/srijan/Rails Learning/practice/Rails-webapps/alpha_blog/app/views/articles/index.html.erb:49: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/articles/index.html.erb:12: syntax error, unexpected ':', expecting ')'
+app/views/articles/index.html.erb:49: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/articles" for ::1 at 2021-01-08 16:08:54 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 113ms (Views: 108.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:11:51 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 133ms (Views: 129.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-08 16:12:39 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 146ms (Views: 141.4ms | ActiveRecord: 0.6ms)
+
+
