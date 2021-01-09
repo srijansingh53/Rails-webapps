@@ -5628,3 +5628,214 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 126ms (Views: 124.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/1/edit" for ::1 at 2021-01-09 21:55:10 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/_form.html.erb (21.8ms)
+  Rendered users/edit.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 297ms (Views: 270.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2021-01-09 21:56:50 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.6ms)
+  Rendered users/_form.html.erb (17.7ms)
+  Rendered users/edit.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 106ms (Views: 98.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-01-09 21:56:55 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2021-01-09 21:56:56 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (3.0ms)
+  Rendered users/_form.html.erb (16.5ms)
+  Rendered users/new.html.erb within layouts/application (21.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 101ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2021-01-09 21:57:09 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered users/_form.html.erb (5.3ms)
+  Rendered users/edit.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4/edit" for ::1 at 2021-01-09 21:57:16 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/edit.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2021-01-09 21:57:21 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/3" for ::1 at 2021-01-09 22:00:05 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7gDZ3RtvG5tE1ddAn42woLan1OP7vA1qzDZDP6PCsmAOEN+yA0mU4A2Ff51nZiqUNCitL16D8SqgbOQEAr3vQ==", "user"=>{"username"=>"sri3", "email"=>"srijansingh.1@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update Account", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["username", "sri3"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "srijansingh.1@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$12$BkRbnJQdTXW5qwgpesxzBOpsPgitdDin9lWaomBJfKFZ954pK5Ynu"], ["updated_at", "2021-01-09 16:30:05.311135"], ["id", 3]]
+  [1m[35m (70.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 326ms (ActiveRecord: 72.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-09 22:00:05 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (73.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 142.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2021-01-09 22:00:49 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered users/_form.html.erb (6.9ms)
+  Rendered users/edit.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2021-01-09 22:00:53 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"caDr+P3fFXnsiTHDtNym3OzJ7XF7V1l3slyeIxpo96j2IKvhQb+PRAGsc2DDPwi0PsPQlknDpoaz7fS/9O0K3A==", "user"=>{"username"=>"sri", "email"=>"srijansingh53@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update Account", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["username", "sri"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "srijansingh53@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$12$yGK7VKrT598gcyCikUqQSuH9LkXlqcF8ygbc6cvqYz.EYEg7cGJke"], ["updated_at", "2021-01-09 16:30:54.165170"], ["id", 1]]
+  [1m[35m (85.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 354ms (ActiveRecord: 86.8ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-09 22:00:54 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (68.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 146ms (Views: 142.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4/edit" for ::1 at 2021-01-09 22:01:32 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/4" for ::1 at 2021-01-09 22:01:40 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WrYGr0ofSjgGQfhekdanr5rOsUFsR1+w0Tb9BXXr4IPdNka29n/QBetkuv3mNQnHSMSMpl7ToEHQh5eZm24d9w==", "user"=>{"username"=>"sri4", "email"=>"srijansinghe.4@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update Account", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["username", "sri4"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "srijansinghe.4@gmail.com"], ["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "srijansinghe.4@gmail.com"], ["updated_at", "2021-01-09 16:31:40.129447"], ["id", 4]]
+  [1m[35m (1169.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 1180ms (ActiveRecord: 1170.6ms)
+
+
+Started GET "/articles" for ::1 at 2021-01-09 22:01:41 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.5ms)
+
+
