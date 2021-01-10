@@ -22,10 +22,20 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       flash[:notice] = "Your account has been updated"
-      redirect_to articles_path
+      redirect_to user_path(@user)
     else
       render 'edit'
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    @articles = @user.articles
+  end
+
+  def index
+    @users = User.all
+    # byebug
   end
 
   private
